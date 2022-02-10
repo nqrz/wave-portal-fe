@@ -152,9 +152,6 @@ onMounted(() => {
         Wave 👋
       </button>
     </form>
-    <div>
-      {{ message }}
-    </div>
   </div>
   <Waves :waves="allWaves" />
 </template>
