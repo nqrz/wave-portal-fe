@@ -26,28 +26,6 @@ const formatDate = (date) => {
           {{ wave.message }}
         </h4>
       </div>
-      <div v-for="wave in waves" class="card">
-        <h6 style="margin: 0;">
-          {{ formatDate(wave.timestamp) }}
-        </h6>
-        <p style="margin: 0; margin-top: 8px;">
-          Sender : {{ wave.address.slice(0, 14) }}...
-        </p>
-        <h4>
-          {{ wave.message }}
-        </h4>
-      </div>
-      <div v-for="wave in waves" class="card">
-        <h6 style="margin: 0;">
-          {{ formatDate(wave.timestamp) }}
-        </h6>
-        <p style="margin: 0; margin-top: 8px;">
-          Sender : {{ wave.address.slice(0, 14) }}...
-        </p>
-        <h4>
-          {{ wave.message }}
-        </h4>
-      </div>
     </div>
   </div>
 </template>
