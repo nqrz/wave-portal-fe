@@ -105,6 +105,7 @@ const handleWave = async () => {
 
       count = await wavePortalContract.getTotalWaves();
       console.log("Retrieved total wave count..", count.toNumber());
+      getAllWaves()
     } else {
       console.log("Ethereum object doesn't exist!");
     }
