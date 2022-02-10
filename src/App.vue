@@ -8,7 +8,7 @@ const currentAccount = ref('')
 const allWaves = ref([])
 const message = ref('')
 
-const contractAddress = "0xd010c650A53080244c7812d5bAAA0ED45D58D1C7"
+const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS
 
 const contractABI = abi.abi;
 
