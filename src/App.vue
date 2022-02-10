@@ -96,7 +96,7 @@ const handleWave = async () => {
       let count = await wavePortalContract.getTotalWaves();
       console.log("Retrieved total wave count...", count.toNumber());
 
-      const waveTxn = await wavePortalContract.wave(message.value);
+      const waveTxn = await wavePortalContract.wave(message.value, { gasLimi: 300000});
       console.log("Mining...", waveTxn.hash);
       message.value = ''
 
