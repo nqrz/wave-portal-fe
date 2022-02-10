@@ -78,6 +78,7 @@ const connectWallet = async () => {
 
     console.log("Connected", accounts[0]);
     currentAccount.value = accounts[0]
+    getAllWaves()
   } catch (error) {
     console.log(error)
   }
